@@ -1,5 +1,73 @@
-.categoryPanel button{text-transform: capitalize !important;}
+/* === Category Panel Buttons === */
+.categoryPanel button {
+  text-transform: capitalize !important;
+}
 
+/* === المستوى الأول من القوائم المنسدلة === */
+.nav li {
+  position: relative;
+}
 
-.nav  li .submune{visibility: hidden;}
-.nav  li:hover .submune{opacity: 1 !important; visibility: inherit; top: 100%v;}
+.nav li .submune {
+  position: absolute;
+  top: 120%;
+  left: 0;
+  min-width: 200px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+.nav li:hover > .submune {
+  opacity: 1 !important;
+  visibility: visible;
+  top: 100% !important;
+}
+
+/* === الأزرار داخل القوائم === */
+.nav li .submune button {
+  font-weight: 400 !important;
+  color: rgba(0, 0, 0, 0.8) !important;
+  width: 100%;
+  justify-content: flex-start;
+  border-radius: 0 !important;
+}
+
+.nav li .submune li:hover button {
+  color: rgb(233, 109, 126) !important;
+}
+
+/* === القوائم الفرعية (المستوى الثاني) === */
+.nav li .submune li {
+  position: relative;
+}
+
+.nav li .submune li .submune {
+  position: absolute;
+  top: 0px !important;
+  left: 120% !important;
+  min-width: 200px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  opacity: 0 !important;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.nav li .submune li:hover > .submune {
+  left: 100% !important;
+  opacity: 1 !important;
+  visibility: visible;
+}
+
+/* === أزرار القوائم الداخلية === */
+.nav li .submune li .submune button {
+  color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.nav li .submune li .submune button:hover {
+  color: rgb(233, 109, 126) !important;
+}

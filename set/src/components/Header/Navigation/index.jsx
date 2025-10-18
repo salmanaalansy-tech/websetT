@@ -57,26 +57,88 @@ const Navigation = () => {
                 >
                   <ul>
                     <li className="list-none !w-full">
-                      <Button className=" !text-black !w-full !justify-start  !rounded-none ">Men</Button>
+                      <Link to={"/"} className="w-full">
+                        <Button className=" !text-black !w-full !justify-start  !rounded-none ">
+                          Men
+                        </Button>
+                      </Link>
+
+                      <div
+                        className="submune absolute top-[100%]  left-[0%] min-w-[200px]  bg-white
+              shadow-md opacity-0 transition-all "
+                      >
+                        <ul>
+                          <li className="list-none !w-full">
+                            <Link to={"/"} className="w-full">
+                              <Button className=" !text-black !w-full !justify-start  !rounded-none ">
+                               T-shirt
+                              </Button>
+                            </Link>
+                          </li>
+                          <li className="list-none !w-full">
+                            <Link to={"/"} className="w-full">
+                              <Button className=" !text-black !w-full !justify-start !rounded-none">
+                              jinse
+                              </Button>
+                            </Link>
+                          </li>
+                          <li className="list-none !w-full">
+                            <Link to={"/"} className="w-full">
+                              <Button className=" !text-black !w-full !justify-start !rounded-none">
+                               cote
+                              </Button>
+                            </Link>
+                          </li>
+                          <li className="list-none !w-full">
+                            <Link to={"/"} className="w-full">
+                              <Button className=" !text-black !w-full !justify-start !rounded-none">
+                               choises
+                              </Button>
+                            </Link>
+                          </li>
+                          <li className="list-none !w-full">
+                            <Link to={"/"} className="w-full">
+                              <Button className=" !text-black  !w-full !justify-start  !rounded-none">
+                               paints
+                              </Button>
+                            </Link>
+                          </li>
+                        </ul>
+                      </div>
+
+
                     </li>
                     <li className="list-none !w-full">
-                      <Button className=" !text-black !w-full !justify-start !rounded-none">women</Button>
+                      <Link to={"/"} className="w-full">
+                        <Button className=" !text-black !w-full !justify-start !rounded-none">
+                          women
+                        </Button>
+                      </Link>
                     </li>
                     <li className="list-none !w-full">
-                      <Button className=" !text-black !w-full !justify-start !rounded-none">kids</Button>
+                      <Link to={"/"} className="w-full">
+                        <Button className=" !text-black !w-full !justify-start !rounded-none">
+                          kids
+                        </Button>
+                      </Link>
                     </li>
                     <li className="list-none !w-full">
-                      <Button className=" !text-black !w-full !justify-start !rounded-none">girale</Button>
+                      <Link to={"/"} className="w-full">
+                        <Button className=" !text-black !w-full !justify-start !rounded-none">
+                          girale
+                        </Button>
+                      </Link>
                     </li>
                     <li className="list-none !w-full">
-                      <Button className=" !text-black  !w-full !justify-start  !rounded-none">boys</Button>
+                      <Link to={"/"} className="w-full">
+                        <Button className=" !text-black  !w-full !justify-start  !rounded-none">
+                          boys
+                        </Button>
+                      </Link>
                     </li>
                   </ul>
                 </div>
-
-
               </li>
-
 
               <li className="list-none">
                 <Link className="link transition text-[18px] font-[500] ">

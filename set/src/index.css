@@ -12,11 +12,12 @@ body {
   font-optical-sizing: auto;
   background: #f3eded;
   color: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
 }
 /* header .top-strip {
   
 } */
-
+  
 .container {
   width: 95%;
   margin: auto;
@@ -28,18 +29,75 @@ body {
 .MuiBadge-badge {
   background-color: #ff0000 !important;
 }
-/* 
+
 nav ul button {
   text-transform: capitalize !important ;
-    color: rgba(0, 0, 0, 0.7) !important;
 }
+
 nav ul button:hover {
-  text-transform: capitalize !important ;
-    color:  #f77474 !important;
-} */
-
-nav ul button {
-  text-transform: capitalize !important ;
+  background: none !important;
 }
 
-nav ul button:hover{background : none !important;}
+.sliderHome {
+  overflow: inherit !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f6f6 !important;
+  border-radius: 100%;
+  padding: 10px 10px;
+  color: black !important;
+  margin: auto;
+  box-shadow: 0 1px 3px rgb(7, 7, 7), 0 1px 2px rgb(7, 7, 7) !important;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 22px !important;
+}
+
+
+ 
+
+.homeCatSlider .swiper {
+  overflow: visible !important;
+}
+
+.homeCatSlider .swiper-button-prev,
+.homeCatSlider .swiper-button-next {
+ 
+  width: 35px;
+  height: 35px;
+  min-width: 35px;  
+}
+.homeCatSlider .swiper-button-prev::after,
+.homeCatSlider .swiper-button-next::after {
+ font-size: 20px !important;
+}
+
+.homeCatSlider .swiper-button-prev{
+  left: -10px !important;
+}
+
+ 
+.homeCatSlider .swiper-button-next {  right: -10px !important;}
+
+ .homeCatSlider .swiper-button-next:hover,
+ .swiper-button-prev:hover{
+  background: #f77474 !important;
+ }
+
+  /* .homeCatSlider .swiper-button-next:hover:after,
+ .swiper-button-prev:hover:after{
+  background: #f77474 !important;
+ } */
+
+
+   .homeCatSlider  .item{border: 1px solid rgba(0, 0, 0, 0.39) ;}
+   
+       .homeCatSlider .item img{transition: 0.3s ease; }
+    .homeCatSlider .item:hover img{transform: scale(1.1);}
