@@ -85,7 +85,7 @@ const Header = () => {
       </div>
 
       {/* ===================== Main Header ===================== */}
-      <div className="header py-1  py-1 border-t-[1px]  border-gray-250  border-b-[1px]">
+      <div className="header py-1   border-t-[1px]  border-gray-250  border-b-[1px]">
         <div className="  flex items-center justify-between">
           <div className="col1 w-[25%] ">
             <Link to={"/"}>

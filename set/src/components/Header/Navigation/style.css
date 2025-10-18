@@ -1,0 +1,5 @@
+.categoryPanel button{text-transform: capitalize !important;}
+
+
+.nav  li .submune{visibility: hidden;}
+.nav  li:hover .submune{opacity: 1 !important; visibility: inherit; top: 100%v;}
